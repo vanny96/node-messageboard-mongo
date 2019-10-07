@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1= title
+
+    form(action="/new", method="post")
+        label(for="text") Text
+        br
+        input(type="text", name="text")
+        br
+
+        label(for="user") User
+        br
+        input(type="text", name="user")
+        br
+
+        button(type="submit") Aggiungi messaggio

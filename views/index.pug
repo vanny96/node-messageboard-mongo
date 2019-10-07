@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to the #{title}, #[a(href="/new") click here] to add messages
+
+  table
+    tr 
+      th text
+      th user
+
+    each message in messages
+      tr
+        td= message.text
+        td= message.user
